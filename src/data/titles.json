@@ -1,0 +1,51 @@
+[
+  {
+    "id": "severance",
+    "title": "Severance",
+    "category": "Series",
+    "poster": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=400&h=600&fit=crop",
+    "characters": [
+      {
+        "name": "Lumon Industries",
+        "frontTemplate": "lumon-front",
+        "backTemplate": "lumon-back",
+        "editableFields": [
+          { "key": "name", "label": "Full Name", "type": "text", "default": "Mark Scout" },
+          { "key": "department", "label": "Department", "type": "text", "default": "Macrodata Refinement" },
+          { "key": "idNumber", "label": "ID Number", "type": "text", "default": "07-891" },
+          { "key": "photo", "label": "Profile Photo", "type": "image", "default": "" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jurassic",
+    "title": "Jurassic Park",
+    "category": "Movies",
+    "poster": "https://images.unsplash.com/photo-1596766657922-446736df52b4?q=80&w=400&h=600&fit=crop",
+    "characters": [
+      {
+        "name": "InGen Staff",
+        "frontTemplate": "ingen-front",
+        "backTemplate": "ingen-back",
+        "editableFields": [
+          { "key": "name", "label": "Staff Name", "type": "text", "default": "Dr. Ian Malcolm" },
+          { "key": "title", "label": "Job Title", "type": "text", "default": "Chaos Theoretician" },
+          { "key": "access", "label": "Access Level", "type": "text", "default": "LEVEL 4" },
+          { "key": "qrData", "label": "QR Code Content", "type": "text", "default": "AUTH-MALCOLM-1993" },
+          { "key": "photo", "label": "Profile Photo", "type": "image", "default": "" }
+        ]
+      },
+      {
+        "name": "InGen Visitor",
+        "frontTemplate": "ingen-visitor-front",
+        "backTemplate": "ingen-back",
+        "editableFields": [
+          { "key": "name", "label": "Visitor Name", "type": "text", "default": "Lex Murphy" },
+          { "key": "date", "label": "Issue Date", "type": "text", "default": "11/06/1993" },
+          { "key": "qrData", "label": "QR Code Content", "type": "text", "default": "VISITOR-TEMP-ACCESS" }
+        ]
+      }
+    ]
+  }
+]
