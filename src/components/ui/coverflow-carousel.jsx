@@ -1,6 +1,7 @@
 import * as React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "../../lib/utils";
+import { SpotlightButton } from "./button-2";
 
 const useIsoLayoutEffect = typeof window !== "undefined" ? React.useLayoutEffect : React.useEffect;
 
@@ -280,12 +281,12 @@ return (
           </p>
           
           {onSelect && (
-            <button 
+            <SpotlightButton 
               onClick={() => onSelect(active.originalData)}
-              className="mt-6 px-8 py-3 bg-white text-slate-900 font-bold rounded-full shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-105 hover:bg-gray-200 transition-all active:scale-95"
+              className="mt-6"
             >
               Select Universe
-            </button>
+            </SpotlightButton>
           )}
         </div>
       )}

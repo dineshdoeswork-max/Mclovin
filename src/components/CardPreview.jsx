@@ -8,7 +8,7 @@ import McLovinFront from '../templates/McLovinFront';
 import McLovinBack from '../templates/McLovinBack';
 import OscorpFront from '../templates/OscorpFront';
 import OscorpBack from '../templates/OscorpBack';
-import FightClubFront from '../templates/fightclubfront';
+import FightClubFront from '../templates/FightClubFront';
 import FightClubBack from '../templates/FightClubBack';
 const CardPreview = forwardRef(({ template, data }, ref) => {
   
