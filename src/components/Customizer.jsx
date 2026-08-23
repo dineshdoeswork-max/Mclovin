@@ -56,6 +56,22 @@ export default function Customizer({ design }) {
               )}
             </div>
           ))}
+
+          {/* --- NEW QR CODE INPUT HERE --- */}
+          <div className="flex flex-col gap-2 pt-4 border-t border-gray-100">
+            <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              QR Code Link
+            </label>
+            <input
+              type="text"
+              name="qrData"
+              placeholder="https://your-link.com"
+              value={formData.qrData || ""}
+              onChange={(e) => handleChange('qrData', e.target.value)}
+              className="w-full px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all"
+            />
+          </div>
+
         </div>
 
         <ExportButtons frontRef={frontRef} backRef={backRef} fileName={design.name} />

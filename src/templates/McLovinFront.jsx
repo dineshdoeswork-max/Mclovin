@@ -1,3 +1,6 @@
+import React from "react";
+import QRCode from "react-qr-code";
+
 export default function McLovinFront({ data }) {
   const photo = data.photo || {};
   const photoStyle = {
@@ -24,7 +27,21 @@ export default function McLovinFront({ data }) {
         ) : null}
       </div>
 
-      {/* Row 1: DOB and EXP (Moved beside the labels, extra bold) */}
+      {/* Editable QR Code Area */}
+      <div 
+        className="absolute z-10 bg-white p-[2px] rounded-sm flex items-center justify-center" 
+        style={{ top: '15px', left: '270px', width: '45px', height: '45px' }} // Tweak top/left to place it perfectly on your template
+      >
+        <QRCode 
+          value={data.qrData || "https://mclovin-id.vercel.app"} 
+          size={41} 
+          bgColor="transparent"
+          fgColor="#000000"
+          level="L"
+        />
+      </div>
+
+      {/* Row 1: DOB and EXP */}
       <div className="absolute z-10 text-[13px] font-black uppercase" style={{ top: '68px', left: '154px' }}>
         {data.dob || '06/03/1981'}
       </div>
@@ -32,7 +49,7 @@ export default function McLovinFront({ data }) {
         {data.expiry || '06/03/2008'}
       </div>
 
-      {/* Row 2: HT, WT, HAIR, EYES, SEX (Using fixed width & text-center for perfect alignment) */}
+      {/* Row 2: HT, WT, HAIR, EYES, SEX */}
       <div className="absolute z-10 text-[10px] font-bold uppercase w-[24px] text-center" style={{ top: '108px', left: '121px' }}>
         {data.height || '5-10'}
       </div>
